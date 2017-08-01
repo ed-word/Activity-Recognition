@@ -27,7 +27,7 @@ while(cap.isOpened()):
     hsv[...,2] = cv2.normalize(mag,None,0,255,cv2.NORM_MINMAX)
     rgb = cv2.cvtColor(hsv,cv2.COLOR_HSV2BGR)
 
-    cv2.imwrite('/home/edward/MAIN DATA/Output/RGB/opticalrgb'+str(i)+'.png',rgb)
+    cv2.imwrite('Flow'+str(i)+'.png',rgb)
     
     iter_time = time.time() - instance
     instance = time.time() 
