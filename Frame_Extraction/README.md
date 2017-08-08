@@ -1,7 +1,6 @@
 # Extract Frames by setting desired fps
 
-./extract_frames.sh x
-
+### ./extract_frames.sh x
 x: Frames/sec
 
 Run
