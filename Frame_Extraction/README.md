@@ -4,7 +4,7 @@
 x: Frames/sec
 
 Run
-./extract_frames.sh 20
+##### ./extract_frames.sh 20
 To extract 20 frames/sec
 
 
