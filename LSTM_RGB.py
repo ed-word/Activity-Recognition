@@ -2,6 +2,7 @@ import numpy as np
 import tensorflow as tf
 import os
 import pandas as pd
+import math
 
 #Training Hyper-parameters
 batch_size = 128
@@ -118,7 +119,7 @@ def generate_batch(bx, by, start, end):
 init = tf.global_variables_initializer()
 saver = tf.train.Saver(max_to_keep=50)
 
-no_of_batches = int(len(train_x ) / batch_size)
+no_of_batches = math.ceil(len(train_x ) / batch_size)
 
 with tf.Session() as sess:
     sess.run(init)
